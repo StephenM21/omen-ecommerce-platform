@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Confirmed — OMEN</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Barlow+Condensed:wght@300;400;500;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      background: #000;
+      color: #fff;
+      font-family: 'Barlow', sans-serif;
+      font-weight: 300;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes drawLine {
+      from { width: 0; }
+      to   { width: 60px; }
+    }
+    .wrap {
+      text-align: center;
+      padding: 60px 40px;
+      max-width: 600px;
+      animation: fadeUp 0.8s ease both;
+    }
+    .check {
+      width: 64px;
+      height: 64px;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 36px;
+      font-size: 28px;
+    }
+    .eyebrow {
+      font-family: 'Metal Mania', sans-serif;
+      font-size: 10px;
+      letter-spacing: 6px;
+      color: #444;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-family: 'Metal Mania', sans-serif;
+      font-size: clamp(32px, 6vw, 60px);
+      letter-spacing: 6px;
+      line-height: 1;
+      margin-bottom: 24px;
+    }
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: #fff;
+      margin: 0 auto 28px;
+      animation: drawLine 0.6s ease 0.4s both;
+    }
+    p {
+      font-family: 'Barlow', sans-serif;
+      font-size: 14px;
+      color: #666;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    p strong { color: #aaa; }
+    .details {
+      background: #0a0a0a;
+      border: 1px solid #1a1a1a;
+      padding: 28px 32px;
+      margin: 36px 0;
+      text-align: left;
+    }
+    .details-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #111;
+      font-size: 12px;
+    }
+    .details-row:last-child { border-bottom: none; }
+    .details-row span:first-child {
+      font-family: 'Metal Mania', sans-serif;
+      letter-spacing: 3px;
+      font-size: 10px;
+      color: #444;
+    }
+    .details-row span:last-child {
+      font-family: 'Barlow', sans-serif;
+      color: #888;
+    }
+    .btn {
+      display: inline-block;
+      font-family: 'Metal Mania', sans-serif;
+      font-size: 11px;
+      letter-spacing: 5px;
+      padding: 16px 48px;
+      background: #fff;
+      color: #000;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s;
+      margin-top: 8px;
+    }
+    .btn:hover { background: #ddd; }
+    .tagline {
+      margin-top: 48px;
+      font-family: 'Metal Mania', sans-serif;
+      font-size: 10px;
+      letter-spacing: 5px;
+      color: #1a1a1a;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="check">✓</div>
+    <div class="eyebrow">ORDER CONFIRMED</div>
+    <h1>YOU'RE<br/>LOCKED IN</h1>
+    <div class="divider"></div>
+    <p>Your order has been received and is being prepared.</p>
+    <p>Since every OMEN piece is <strong>made to order</strong>, production typically takes <strong>2–6 business days</strong> before shipment. You'll receive a tracking number by email once it ships.</p>
+
+    <div class="details">
+      <div class="details-row">
+        <span>PRODUCTION</span>
+        <span>2–6 business days</span>
+      </div>
+      <div class="details-row">
+        <span>US SHIPPING</span>
+        <span>3–7 business days after production</span>
+      </div>
+      <div class="details-row">
+        <span>TRACKING</span>
+        <span>Emailed when your order ships</span>
+      </div>
+      <div class="details-row">
+        <span>QUESTIONS</span>
+        <span><a href="mailto:support@omenapparel.com" style="color:#666;text-decoration:none;">support@omenapparel.com</a></span>
+      </div>
+    </div>
+
+    <a href="index.html" class="btn">BACK TO STORE</a>
+
+    <div class="tagline">BUILT FOR THE HEAVY · FORGED IN DARKNESS</div>
+  </div>
+</body>
+</html>
